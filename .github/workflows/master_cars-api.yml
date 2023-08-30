@@ -23,7 +23,7 @@ jobs:
 
       - name: npm install, build, and test
         run: |
-          npm run build-prod
+          npm run dev
 
   deploy:
     runs-on: ubuntu-latest
