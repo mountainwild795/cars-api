@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node dist/server.js",
-    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
     "build": "tsc --project .",
     "build-prod": "cd client && npm install && npm run build && cd .. && npm install && npm run build",
     "server": "nodemon --verbose --watch \"server\" --ext \"ts,json\" --exec ts-node server/server.ts",
@@ -27,3 +26,4 @@
     "typescript": "^5.2.2"
   }
 }
+
